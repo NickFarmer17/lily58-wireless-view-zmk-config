@@ -23,6 +23,29 @@
 
             label = "SPOTIFY_SKIP";
         };
+
+        diameter_symbol: diameter_symbol {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_1 &kp KP_NUMBER_6>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "Ø";
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        layer_3 {
+            bindings = <&mo 3>;
+            key-positions = <52 55>;
+        };
     };
 
     keymap {
@@ -61,7 +84,7 @@
 &bt BT_CLR        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4                                           &trans     &trans      &trans           &trans    &trans    &trans
 &kp F1            &kp F2        &kp F3        &kp F4        &kp F5         &kp F6                                                 &kp F7     &kp F8      &kp F9           &kp F10   &kp F11   &kp F12
 &kp LEFT_SHIFT    &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR     &kp PRCNT                                              &kp CARET  &kp AMPS    &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp TILDE
-&kp LEFT_CONTROL  &trans        &kp DELETE    &trans        &kp BACKSPACE  &spotify_skip  &kp C_PREVIOUS      &kp C_NEXT          &kp CAPS   &kp MINUS   &kp KP_PLUS      &kp LBRC  &kp RBRC  &kp PIPE
+&kp LEFT_CONTROL  &trans        &kp DELETE    &trans        &kp BACKSPACE  &spotify_skip  &kp C_PREVIOUS      &kp C_NEXT          &kp CAPS   &kp MINUS   &kp PLUS         &kp LBRC  &kp RBRC  &kp PIPE
                                               &trans        &trans         &trans         &kp C_PLAY_PAUSE    &kp C_FAST_FORWARD  &trans     &kp DELETE  &trans
             >;
 
@@ -86,6 +109,16 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        };
+
+        Macro_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+            >;
         };
     };
 };
