@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 
 / {
     macros {
@@ -55,14 +56,14 @@
         cad_copy: cad_copy {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp C &kp O &kp P &kp Y &kp B &kp A &kp S &kp E &kp RET &kp N0 &kp COMMA &kp N0 &kp COMMA &kp N0 &kp C &kp O &kp P &kp Y &kp B &kp A &kp S &kp E &kp RET &kp N0 &kp COMMA &kp N0 &kp COMMA &kp N0 &kp RET>;
+            bindings = <&kp C &kp O &kp P &kp Y &kp B &kp A &kp S &kp E &kp RET &kp N0 &kp COMMA &kp N0 &kp COMMA &kp N0 &kp RET>;
             label = "CAD_COPY";
         };
 
         cad_paste: cad_paste {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp C &kp O &kp P &kp Y &kp B &kp A &kp S &kp E &kp RET &kp N0 &kp COMMA &kp N0 &kp COMMA &kp N0 &kp P &kp A &kp S &kp T &kp E &kp C &kp L &kp I &kp P &kp RET &kp N0 &kp COMMA &kp N0 &kp COMMA &kp N0 &kp RET>;
+            bindings = <&kp P &kp A &kp S &kp T &kp E &kp C &kp L &kp I &kp P &kp RET &kp N0 &kp COMMA &kp N0 &kp COMMA &kp N0 &kp RET>;
             label = "CAD_PASTE";
         };
     };
@@ -102,7 +103,7 @@
 
             display-name = "Lower";
             bindings = <
-&bt BT_CLR        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4                                                 &trans     &trans      &trans           &trans    &trans    &trans
+&bt BT_CLR        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &out OUT_TOG                                                 &trans     &trans      &trans           &trans    &trans    &trans
 &kp F1            &kp F2        &kp F3        &kp F4        &kp F5         &kp F6                                                       &kp F7     &kp F8      &kp F9           &kp F10   &kp F11   &kp F12
 &kp LEFT_SHIFT    &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR     &kp PRCNT                                                    &kp CARET  &kp AMPS    &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp TILDE
 &kp LEFT_CONTROL  &trans        &kp DELETE    &trans        &kp BACKSPACE  &macro_spotify_skip  &kp C_PREVIOUS      &kp C_NEXT          &kp CAPS   &kp MINUS   &kp PLUS         &kp LBRC  &kp RBRC  &kp PIPE
