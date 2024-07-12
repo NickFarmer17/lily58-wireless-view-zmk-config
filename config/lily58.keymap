@@ -117,11 +117,11 @@
 
             display-name = "Lower";
             bindings = <
-&bt BT_CLR        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &out OUT_TOG                                                 &trans     &trans      &trans           &trans    &trans    &trans
-&kp F1            &kp F2        &kp F3        &kp F4        &kp F5         &kp F6                                                       &kp F7     &kp F8      &kp F9           &kp F10   &kp F11   &kp F12
-&kp LEFT_SHIFT    &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR     &kp PRCNT                                                    &kp CARET  &kp AMPS    &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp TILDE
-&kp LEFT_CONTROL  &trans        &kp DELETE    &trans        &kp BACKSPACE  &macro_spotify_skip  &kp C_PREVIOUS      &kp C_NEXT          &kp CAPS   &kp MINUS   &kp PLUS         &kp LBRC  &kp RBRC  &kp PIPE
-                                              &trans        &trans         &trans               &kp C_PLAY_PAUSE    &kp C_FAST_FORWARD  &trans     &kp DELETE  &trans
+&bt BT_CLR        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &out OUT_TOG                                                 &none      &none       &none            &none    &none    &none
+&kp F1            &kp F2        &kp F3        &kp F4        &kp F5         &kp F6                                                       &kp F7     &kp F8      &kp F9           &kp F10  &kp F11  &kp F12
+&kp LEFT_SHIFT    &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR     &kp PRCNT                                                    &kp CARET  &kp AMPS    &kp KP_MULTIPLY  &none    &none    &kp TILDE
+&kp LEFT_CONTROL  &none         &kp DELETE    &none         &kp BACKSPACE  &macro_spotify_skip  &kp C_PREVIOUS      &kp C_NEXT          &kp CAPS   &kp MINUS   &kp PLUS         &none    &none    &kp PIPE
+                                              &none         &none          &none                &kp C_PLAY_PAUSE    &kp C_FAST_FORWARD  &none      &kp DELETE  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -137,11 +137,11 @@
 
             display-name = "Raise";
             bindings = <
-&trans                &none                  &none            &kp KP_DIVIDE    &kp KP_MULTIPLY  &kp KP_SUBTRACT                                         &trans          &kp PAGE_DOWN  &trans        &kp PAGE_UP  &trans           &trans
-&kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS                                             &kp LEFT_BRACE  &kp HOME       &kp UP_ARROW  &kp END      &kp RIGHT_BRACE  &trans
-&kp LEFT_SHIFT        &none                  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS                                                &kp BACKSLASH   &kp LEFT       &kp DOWN      &kp RIGHT    &kp SLASH        &trans
-&kp LEFT_CONTROL      &trans                 &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_SUBTRACT  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &trans          &kp MINUS      &kp EQUAL     &trans       &trans           &kp RIGHT_WIN
-                                                              &trans           &kp BACKSPACE    &kp PERIOD       &kp KP_NUMBER_0     &kp ENTER          &trans          &kp DELETE     &trans
+&none             &none  &none            &kp KP_DIVIDE    &kp KP_MULTIPLY  &kp KP_SUBTRACT                                         &kp LESS_THAN   &kp PAGE_DOWN  &none         &kp PAGE_UP  &kp GREATER_THAN  &none
+&none             &none  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS                                             &kp LEFT_BRACE  &kp HOME       &kp UP_ARROW  &kp END      &kp RIGHT_BRACE   &none
+&kp LEFT_SHIFT    &none  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS                                                &kp BACKSLASH   &kp LEFT       &kp DOWN      &kp RIGHT    &kp SLASH         &none
+&kp LEFT_CONTROL  &none  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_SUBTRACT  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &none           &kp MINUS      &kp EQUAL     &none        &none             &kp RIGHT_WIN
+                                          &none            &kp BACKSPACE    &kp PERIOD       &kp KP_NUMBER_0     &kp ENTER          &none           &kp DELETE     &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
