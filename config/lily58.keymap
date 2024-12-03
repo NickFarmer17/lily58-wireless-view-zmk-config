@@ -138,11 +138,11 @@
 
             display-name = "Raise";
             bindings = <
-&none             &kp K_MENU  &none            &kp KP_DIVIDE    &kp KP_MULTIPLY  &kp KP_SUBTRACT                                         &kp LESS_THAN   &kp PAGE_DOWN  &none         &kp PAGE_UP  &kp GREATER_THAN  &none
-&none             &mkp MB2    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS                                             &kp LEFT_BRACE  &kp HOME       &kp UP_ARROW  &kp END      &kp RIGHT_BRACE   &none
-&kp LEFT_SHIFT    &none       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS                                                &kp BACKSLASH   &kp LEFT       &kp DOWN      &kp RIGHT    &kp SLASH         &none
-&kp LEFT_CONTROL  &none       &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_SUBTRACT  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &none           &kp MINUS      &kp EQUAL     &none        &none             &kp RIGHT_WIN
-                                               &none            &kp BACKSPACE    &kp PERIOD       &kp KP_NUMBER_0     &kp ENTER          &none           &kp DELETE     &none
+&none             &kp K_MENU  &none            &kp KP_DIVIDE    &kp KP_MULTIPLY  &kp KP_SUBTRACT                                         &kp LESS_THAN   &kp PAGE_UP  &none         &kp PAGE_DOWN  &kp GREATER_THAN  &none
+&none             &mkp MB2    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS                                             &kp LEFT_BRACE  &kp HOME     &kp UP_ARROW  &kp END        &kp RIGHT_BRACE   &none
+&kp LEFT_SHIFT    &none       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS                                                &kp BACKSLASH   &kp LEFT     &kp DOWN      &kp RIGHT      &kp SLASH         &none
+&kp LEFT_CONTROL  &none       &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_SUBTRACT  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &none           &kp MINUS    &kp EQUAL     &none          &none             &kp RIGHT_WIN
+                                               &none            &kp BACKSPACE    &kp PERIOD       &kp KP_NUMBER_0     &kp ENTER          &none           &kp DELETE   &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
